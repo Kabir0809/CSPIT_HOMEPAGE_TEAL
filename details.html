@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Include Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      .profile-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%; /* If you want the image to be circular */
+      }
+
+      .profile-text {
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .profile-text h4 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .profile-text p {
+        margin-bottom: 8px;
+        color: #555;
+      }
+
+      .contact-icons a {
+        margin: 0 10px;
+        font-size: 24px;
+        color: #555;
+      }
+
+      .contact-icons a:hover {
+        color: #008080;
+      }
+
+      .accordion-button:focus {
+        box-shadow: none;
+      }
+
+      .accordion-button:not(.collapsed) {
+        background-color: #008080;
+        color: #fff;
+      }
+
+      .accordion-button {
+        background-color: #008080;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        outline: none;
+      }
+
+      .accordion-button::after {
+        filter: invert(100%);
+      }
+
+      .research-interests {
+        color: #008080;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+      .section-head {
+        font-family: "Playfair-Bold";
+        border-bottom: 5px solid #008080;
+        display: inline;
+        line-height: 1.7;
+        color: #008080;
+      }
+      @media (max-width: 992px) {
+        .sidenav {
+          display: none;
+        }
+      }
+      @media (max-width: 1024px) {
+        .card {
+          width: 100%; /* Full width on smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div>
+        <h3 class="section-head" style="line-height: 1.45">Profile</h3>
+      </div>
+      <div class="row">
+        <!-- Left Section: Profile Image and Info -->
+        <div class="col-md-3">
+          <div class="text-center">
+            <img
+              src="faculty_image/AbhishekPatel.webp"
+              alt="Profile Picture"
+              class="profile-img"
+            />
+          </div>
+          <div class="profile-text">
+            <h4>Prof. Abhishek Patel</h4>
+            <p><strong>Assistant Professor</strong></p>
+            <p>M. Tech. , Ph.D. (Pursuing)</p>
+            <!-- Contact Icons Section -->
+            <div class="contact-icons">
+              <a
+                href="#"
+                loading="lazy"
+                target="_blank"
+                ><i class="fas fa-envelope"></i
+              ></a>
+              <a
+                href="#"
+                loading="lazy"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Section: Accordion -->
+        <div class="col-md-9">
+          <p class="research-interests">Research Interests:</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            sunt velit aperiam ipsam sed. Quis.
+          </p>
+
+          <div class="accordion" id="facultyAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Profile
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#facultyAccordion"
+              >
+                <div class="accordion-body">
+                  Detailed profile information goes here.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Research
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#facultyAccordion"
+              >
+                <div class="accordion-body">
+                  Research information goes here.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Publications
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#facultyAccordion"
+              >
+                <div class="accordion-body">Publications list goes here.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Teaching
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#facultyAccordion"
+              >
+                <div class="accordion-body">Teaching details go here.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Selected Conference Presentations and Invited Talks
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingFive"
+                data-bs-parent="#facultyAccordion"
+              >
+                <div class="accordion-body">
+                  Conference presentations details go here.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                  aria-expanded="false"
+                  aria-controls="collapseSix"
+                >
+                  Fellowships
+                </button>
+              </h2>
+              <div
+                id="collapseSix"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingSix"
+                data-bs-parent="#facultyAccordion"
+              >
+                <div class="accordion-body">Fellowship details go here.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
